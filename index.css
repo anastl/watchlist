@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    height: 100vh;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-image: url('https://images.unsplash.com/photo-1628432136678-43ff9be34064?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=663');
+    background-color: #000000ce;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: right 25%;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    min-height: 30%;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+}
+
+a:focus,
+a:hover {
+    color: #a9a9a9;
+    text-decoration: underline;
+}
+
+h1, a {
+    margin: 1em;
+}
+
+.search-bar-outer-container {
+    justify-content: flex-end;
+    display: flex;
+    margin: -1.25em auto 0 auto;
+    width: 80%;
+}
+
+.search-bar-container {
+    width: 70%;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.search-icon {
+    position: relative;
+    top: .25em;
+    left: .2em;
+    overflow: visible;
+}
+
+input {
+    padding: .5em 0 .5em 1.9em;
+    margin-left: -1.5em;
+    border: #6B7280 1px solid;
+    border-radius: .5em 0 0 .5em;
+    width: 100%;
+}
+
+.search-movie-btn {
+    border: #6B7280 1px solid;
+    cursor: pointer;
+    border-radius: 0 .5em .5em 0;
+    padding: .5em 1em .5em 1em;
+    background-color: #D1D5DB;
+    color: #374151;
+    border-left: none;
+    width: 30%;
+}
+
+.search-movie-btn:hover,
+.search-movie-btn:focus {
+    background-color: #374151;
+    color: #f4f4f3;
+}
+
+.search-movie-btn:disabled {
+    color: #363636;
+}
+
+.movies-container {
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder {
+    width: 25%;
+    max-width: 100%;    
+    margin: 2em auto 0;
+}
+
+.placeholder-text {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: #DFDDDD;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.movie-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-bottom: 2.5px solid #acabac;
+    font-size: .85em;
+    margin: .5rem auto;
+    padding: .5rem .25rem 1.5rem;
+}
+
+.movie-poster {
+    height: 90%;
+    margin-right: .5em;
+}
+
+.movie-body {
+    height: 80%;
+}
+
+.movie-name, .movie-rating-container {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.movie-title {
+    margin: 0;
+    width: 85%;
+}
+
+.movie-rating-container {
+    width: 15%;
+}
+
+.movie-name {
+    justify-content: space-between;
+}
+
+.rating-icon {
+    min-height: 25%;
+    margin: 0 .25em 0 .25em;
+}
+
+.movie-dets-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .25em;
+    font-size: .85em;
+}
+
+.movie-dets, .watchlist-btn {
+    margin: 0;
+}
+
+.movie-dets.length {
+    width: 25%;
+}
+
+.movie-dets.genre {
+    width: 40%;
+}
+
+.watchlist-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.watchlist-btn:focus,
+.watchlist-btn:hover {
+    transform: scale(1.1);
+}
+
+.watchlist-btn:active {
+    transform: scale(.9);
+}
+
+.watchlist-icon {
+    min-height: 20%;
+    margin-right: .25em;
+}
+
+.movie-plot {
+    text-align: justify;
+}
+
+.placeholder-w-text {
+    color: #DFDDDD;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.placeholder-w-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #363636;
+    font-weight: 700;
+    margin: 0;
+}
+
