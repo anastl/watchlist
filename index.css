@@ -141,13 +141,13 @@ input {
     padding: .5rem .25rem 1.5rem;
 }
 
-.movie-poster {
-    height: 90%;
+img.movie-poster {
+    width: 40%;
     margin-right: .5em;
 }
 
 .movie-body {
-    height: 80%;
+    width: 60%;
 }
 
 .movie-name, .movie-rating-container {
@@ -228,6 +228,7 @@ input {
     font-size: 1.1rem;
     font-weight: 700;
 }
+
 .placeholder-w-link {
     display: flex;
     justify-content: center;
