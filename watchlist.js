@@ -2,7 +2,7 @@
 
 const moviesContainer = document.getElementById('movies-container')
 
-if (JSON.parse(localStorage.getItem('watchlist')) == null) {
+if (JSON.parse(localStorage.getItem('watchlist')).length == 0) {
     setPlaceholder()
 } else {
     const savedMoviesFromLocalStorage = JSON.parse(localStorage.getItem('watchlist'))
